@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		262CC1991F64297D007E4BE6 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262CC1981F64297D007E4BE6 /* LogInController.swift */; };
+		262CC19B1F642D4A007E4BE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262CC19A1F642D4A007E4BE6 /* Extensions.swift */; };
+		262CC19F1F64387A007E4BE6 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262CC19E1F64387A007E4BE6 /* SignupController.swift */; };
+		2649B9001F63C21B00E8B22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B8FF1F63C21B00E8B22B /* AppDelegate.swift */; };
+		2649B9081F63C21B00E8B22B /* LostPostcards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9061F63C21B00E8B22B /* LostPostcards.xcdatamodeld */; };
+		2649B90A1F63C21B00E8B22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2649B9091F63C21B00E8B22B /* Assets.xcassets */; };
+		2649B90D1F63C21B00E8B22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2649B90B1F63C21B00E8B22B /* LaunchScreen.storyboard */; };
+		2649B9181F63C21B00E8B22B /* LostPostcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9171F63C21B00E8B22B /* LostPostcardsTests.swift */; };
+		2649B9231F63C21B00E8B22B /* LostPostcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9221F63C21B00E8B22B /* LostPostcardsUITests.swift */; };
+		2649B9391F63C24100E8B22B /* SFSStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9381F63C24100E8B22B /* SFSStyles.swift */; };
+		2649B93A1F63C24100E8B22B /* SFSStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9381F63C24100E8B22B /* SFSStyles.swift */; };
+		2649B9571F63C8CE00E8B22B /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9561F63C8CE00E8B22B /* ProfileController.swift */; };
+		2649B9581F63C8CE00E8B22B /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9561F63C8CE00E8B22B /* ProfileController.swift */; };
+		2649B95D1F63C94400E8B22B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B95C1F63C94400E8B22B /* MainTabBar.swift */; };
+		2649B95E1F63C94400E8B22B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B95C1F63C94400E8B22B /* MainTabBar.swift */; };
+		2649B9601F63C95700E8B22B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B95F1F63C95700E8B22B /* HomeController.swift */; };
+		2649B9611F63C95700E8B22B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B95F1F63C95700E8B22B /* HomeController.swift */; };
+		2649B9631F63C9AB00E8B22B /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9621F63C9AB00E8B22B /* FavoriteController.swift */; };
+		2649B9641F63C9AB00E8B22B /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9621F63C9AB00E8B22B /* FavoriteController.swift */; };
+		2649B9661F63C9C700E8B22B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9651F63C9C700E8B22B /* SearchController.swift */; };
+		2649B9671F63C9C700E8B22B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9651F63C9C700E8B22B /* SearchController.swift */; };
+		26CAA7841F64FAF5000CB898 /* Postcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAA7831F64FAF5000CB898 /* Postcard.swift */; };
+		26CAA7871F64FD78000CB898 /* PostcardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAA7861F64FD78000CB898 /* PostcardCell.swift */; };
+		26CAA7891F64FEA2000CB898 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAA7881F64FEA2000CB898 /* CustomImageView.swift */; };
+		26E5AB1D1F63CC2300DAB4E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26E5AB1C1F63CC1D00DAB4E2 /* GoogleService-Info.plist */; };
+		E7B1F08E96A5D8FC5CE2F363 /* Pods_LostPostcards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCB6FEA2F379FEF3470243C /* Pods_LostPostcards.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2649B9141F63C21B00E8B22B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2649B8F41F63C21B00E8B22B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2649B8FB1F63C21B00E8B22B;
+			remoteInfo = LostPostcards;
+		};
+		2649B91F1F63C21B00E8B22B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2649B8F41F63C21B00E8B22B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2649B8FB1F63C21B00E8B22B;
+			remoteInfo = LostPostcards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		262CC1981F64297D007E4BE6 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		262CC19A1F642D4A007E4BE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		262CC19E1F64387A007E4BE6 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		2649B8FF1F63C21B00E8B22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2649B9071F63C21B00E8B22B /* LostPostcards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LostPostcards.xcdatamodel; sourceTree = "<group>"; };
+		2649B9091F63C21B00E8B22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2649B90C1F63C21B00E8B22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2649B90E1F63C21B00E8B22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2649B9171F63C21B00E8B22B /* LostPostcardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostPostcardsTests.swift; sourceTree = "<group>"; };
+		2649B9191F63C21B00E8B22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2649B9221F63C21B00E8B22B /* LostPostcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostPostcardsUITests.swift; sourceTree = "<group>"; };
+		2649B9241F63C21B00E8B22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2649B9381F63C24100E8B22B /* SFSStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSStyles.swift; sourceTree = "<group>"; };
+		2649B9441F63C4B500E8B22B /* LostPostcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostPostcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2649B9451F63C4B500E8B22B /* LostPostcardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostPostcardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2649B9461F63C4B500E8B22B /* LostPostcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostPostcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2649B9561F63C8CE00E8B22B /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		2649B95C1F63C94400E8B22B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		2649B95F1F63C95700E8B22B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		2649B9621F63C9AB00E8B22B /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		2649B9651F63C9C700E8B22B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		26CAA7831F64FAF5000CB898 /* Postcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcard.swift; sourceTree = "<group>"; };
+		26CAA7861F64FD78000CB898 /* PostcardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardCell.swift; sourceTree = "<group>"; };
+		26CAA7881F64FEA2000CB898 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		26E5AB1C1F63CC1D00DAB4E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A7B0BE0C6B82D28EEF5E3D2 /* Pods-LostPostcards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostPostcards.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostPostcards/Pods-LostPostcards.release.xcconfig"; sourceTree = "<group>"; };
+		6FCB6FEA2F379FEF3470243C /* Pods_LostPostcards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostPostcards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83558408FA0A34011F6D013D /* Pods-LostPostcards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostPostcards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostPostcards/Pods-LostPostcards.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2649B8F91F63C21B00E8B22B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B1F08E96A5D8FC5CE2F363 /* Pods_LostPostcards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2649B9101F63C21B00E8B22B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2649B91B1F63C21B00E8B22B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		262CC1961F64295C007E4BE6 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				262CC1981F64297D007E4BE6 /* LogInController.swift */,
+				262CC19E1F64387A007E4BE6 /* SignupController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		2649B8F31F63C21B00E8B22B = {
+			isa = PBXGroup;
+			children = (
+				2649B8FE1F63C21B00E8B22B /* LostPostcards */,
+				2649B9161F63C21B00E8B22B /* LostPostcardsTests */,
+				2649B9211F63C21B00E8B22B /* LostPostcardsUITests */,
+				FF00D33AA08E5CB3B57C024D /* Pods */,
+				93CE41907879826BB7491C56 /* Frameworks */,
+				2649B9441F63C4B500E8B22B /* LostPostcards.app */,
+				2649B9451F63C4B500E8B22B /* LostPostcardsTests.xctest */,
+				2649B9461F63C4B500E8B22B /* LostPostcardsUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		2649B8FE1F63C21B00E8B22B /* LostPostcards */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9301F63C22100E8B22B /* App Delegate */,
+				2649B9361F63C22700E8B22B /* Models */,
+				2649B9351F63C22600E8B22B /* View */,
+				2649B9341F63C22500E8B22B /* Controller */,
+				2649B9371F63C22800E8B22B /* Utilities */,
+				2649B9331F63C22400E8B22B /* Extensions */,
+				2649B9321F63C22300E8B22B /* Supporting Files */,
+				2649B9311F63C22200E8B22B /* Resources */,
+			);
+			path = LostPostcards;
+			sourceTree = "<group>";
+		};
+		2649B9161F63C21B00E8B22B /* LostPostcardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9171F63C21B00E8B22B /* LostPostcardsTests.swift */,
+				2649B9191F63C21B00E8B22B /* Info.plist */,
+			);
+			path = LostPostcardsTests;
+			sourceTree = "<group>";
+		};
+		2649B9211F63C21B00E8B22B /* LostPostcardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9221F63C21B00E8B22B /* LostPostcardsUITests.swift */,
+				2649B9241F63C21B00E8B22B /* Info.plist */,
+			);
+			path = LostPostcardsUITests;
+			sourceTree = "<group>";
+		};
+		2649B9301F63C22100E8B22B /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2649B8FF1F63C21B00E8B22B /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		2649B9311F63C22200E8B22B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9091F63C21B00E8B22B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2649B9321F63C22300E8B22B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26E5AB1C1F63CC1D00DAB4E2 /* GoogleService-Info.plist */,
+				2649B90B1F63C21B00E8B22B /* LaunchScreen.storyboard */,
+				2649B9061F63C21B00E8B22B /* LostPostcards.xcdatamodeld */,
+				2649B90E1F63C21B00E8B22B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2649B9331F63C22400E8B22B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2649B9341F63C22500E8B22B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9551F63C8A000E8B22B /* TabBar */,
+				2649B9541F63C89D00E8B22B /* Home */,
+				2649B9531F63C89C00E8B22B /* Search */,
+				2649B9521F63C89A00E8B22B /* Favorite */,
+				2649B94F1F63C89100E8B22B /* Profile */,
+				262CC1961F64295C007E4BE6 /* LogIn */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2649B9351F63C22600E8B22B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2649B9361F63C22700E8B22B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26CAA7831F64FAF5000CB898 /* Postcard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2649B9371F63C22800E8B22B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9381F63C24100E8B22B /* SFSStyles.swift */,
+				262CC19A1F642D4A007E4BE6 /* Extensions.swift */,
+				26CAA7881F64FEA2000CB898 /* CustomImageView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2649B94F1F63C89100E8B22B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9561F63C8CE00E8B22B /* ProfileController.swift */,
+			);
+			name = Profile;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2649B9521F63C89A00E8B22B /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9621F63C9AB00E8B22B /* FavoriteController.swift */,
+			);
+			name = Favorite;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		2649B9531F63C89C00E8B22B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2649B9651F63C9C700E8B22B /* SearchController.swift */,
+			);
+			name = Search;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		2649B9541F63C89D00E8B22B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				26CAA7851F64FD6D000CB898 /* View */,
+				2649B95F1F63C95700E8B22B /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2649B9551F63C8A000E8B22B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2649B95C1F63C94400E8B22B /* MainTabBar.swift */,
+			);
+			name = TabBar;
+			path = "New Group4";
+			sourceTree = "<group>";
+		};
+		26CAA7851F64FD6D000CB898 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26CAA7861F64FD78000CB898 /* PostcardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93CE41907879826BB7491C56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FCB6FEA2F379FEF3470243C /* Pods_LostPostcards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF00D33AA08E5CB3B57C024D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83558408FA0A34011F6D013D /* Pods-LostPostcards.debug.xcconfig */,
+				5A7B0BE0C6B82D28EEF5E3D2 /* Pods-LostPostcards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2649B8FB1F63C21B00E8B22B /* LostPostcards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2649B9271F63C21B00E8B22B /* Build configuration list for PBXNativeTarget "LostPostcards" */;
+			buildPhases = (
+				C03FD16F6EE401CE8CC45701 /* [CP] Check Pods Manifest.lock */,
+				2649B8F81F63C21B00E8B22B /* Sources */,
+				2649B8F91F63C21B00E8B22B /* Frameworks */,
+				2649B8FA1F63C21B00E8B22B /* Resources */,
+				363E78E17EF581B9C7EBA1B0 /* [CP] Embed Pods Frameworks */,
+				CBF655741E85B2C597DBC305 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LostPostcards;
+			productName = LostPostcards;
+			productReference = 2649B9441F63C4B500E8B22B /* LostPostcards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2649B9121F63C21B00E8B22B /* LostPostcardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2649B92A1F63C21B00E8B22B /* Build configuration list for PBXNativeTarget "LostPostcardsTests" */;
+			buildPhases = (
+				2649B90F1F63C21B00E8B22B /* Sources */,
+				2649B9101F63C21B00E8B22B /* Frameworks */,
+				2649B9111F63C21B00E8B22B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2649B9151F63C21B00E8B22B /* PBXTargetDependency */,
+			);
+			name = LostPostcardsTests;
+			productName = LostPostcardsTests;
+			productReference = 2649B9451F63C4B500E8B22B /* LostPostcardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2649B91D1F63C21B00E8B22B /* LostPostcardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2649B92D1F63C21B00E8B22B /* Build configuration list for PBXNativeTarget "LostPostcardsUITests" */;
+			buildPhases = (
+				2649B91A1F63C21B00E8B22B /* Sources */,
+				2649B91B1F63C21B00E8B22B /* Frameworks */,
+				2649B91C1F63C21B00E8B22B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2649B9201F63C21B00E8B22B /* PBXTargetDependency */,
+			);
+			name = LostPostcardsUITests;
+			productName = LostPostcardsUITests;
+			productReference = 2649B9461F63C4B500E8B22B /* LostPostcardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2649B8F41F63C21B00E8B22B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Small Factory Studios";
+				TargetAttributes = {
+					2649B8FB1F63C21B00E8B22B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					2649B9121F63C21B00E8B22B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2649B8FB1F63C21B00E8B22B;
+					};
+					2649B91D1F63C21B00E8B22B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2649B8FB1F63C21B00E8B22B;
+					};
+				};
+			};
+			buildConfigurationList = 2649B8F71F63C21B00E8B22B /* Build configuration list for PBXProject "LostPostcards" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2649B8F31F63C21B00E8B22B;
+			productRefGroup = 2649B8F31F63C21B00E8B22B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2649B8FB1F63C21B00E8B22B /* LostPostcards */,
+				2649B9121F63C21B00E8B22B /* LostPostcardsTests */,
+				2649B91D1F63C21B00E8B22B /* LostPostcardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2649B8FA1F63C21B00E8B22B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2649B90D1F63C21B00E8B22B /* LaunchScreen.storyboard in Resources */,
+				2649B90A1F63C21B00E8B22B /* Assets.xcassets in Resources */,
+				26E5AB1D1F63CC2300DAB4E2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2649B9111F63C21B00E8B22B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2649B91C1F63C21B00E8B22B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		363E78E17EF581B9C7EBA1B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LostPostcards/Pods-LostPostcards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostPostcards/Pods-LostPostcards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03FD16F6EE401CE8CC45701 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LostPostcards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF655741E85B2C597DBC305 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LostPostcards/Pods-LostPostcards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2649B8F81F63C21B00E8B22B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2649B9001F63C21B00E8B22B /* AppDelegate.swift in Sources */,
+				2649B95D1F63C94400E8B22B /* MainTabBar.swift in Sources */,
+				2649B9391F63C24100E8B22B /* SFSStyles.swift in Sources */,
+				26CAA7891F64FEA2000CB898 /* CustomImageView.swift in Sources */,
+				2649B9661F63C9C700E8B22B /* SearchController.swift in Sources */,
+				262CC19F1F64387A007E4BE6 /* SignupController.swift in Sources */,
+				262CC1991F64297D007E4BE6 /* LogInController.swift in Sources */,
+				262CC19B1F642D4A007E4BE6 /* Extensions.swift in Sources */,
+				2649B9601F63C95700E8B22B /* HomeController.swift in Sources */,
+				2649B9081F63C21B00E8B22B /* LostPostcards.xcdatamodeld in Sources */,
+				26CAA7871F64FD78000CB898 /* PostcardCell.swift in Sources */,
+				26CAA7841F64FAF5000CB898 /* Postcard.swift in Sources */,
+				2649B9571F63C8CE00E8B22B /* ProfileController.swift in Sources */,
+				2649B9631F63C9AB00E8B22B /* FavoriteController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2649B90F1F63C21B00E8B22B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2649B95E1F63C94400E8B22B /* MainTabBar.swift in Sources */,
+				2649B9641F63C9AB00E8B22B /* FavoriteController.swift in Sources */,
+				2649B9581F63C8CE00E8B22B /* ProfileController.swift in Sources */,
+				2649B9671F63C9C700E8B22B /* SearchController.swift in Sources */,
+				2649B9611F63C95700E8B22B /* HomeController.swift in Sources */,
+				2649B93A1F63C24100E8B22B /* SFSStyles.swift in Sources */,
+				2649B9181F63C21B00E8B22B /* LostPostcardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2649B91A1F63C21B00E8B22B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2649B9231F63C21B00E8B22B /* LostPostcardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2649B9151F63C21B00E8B22B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2649B8FB1F63C21B00E8B22B /* LostPostcards */;
+			targetProxy = 2649B9141F63C21B00E8B22B /* PBXContainerItemProxy */;
+		};
+		2649B9201F63C21B00E8B22B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2649B8FB1F63C21B00E8B22B /* LostPostcards */;
+			targetProxy = 2649B91F1F63C21B00E8B22B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2649B90B1F63C21B00E8B22B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2649B90C1F63C21B00E8B22B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2649B9251F63C21B00E8B22B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2649B9261F63C21B00E8B22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2649B9281F63C21B00E8B22B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83558408FA0A34011F6D013D /* Pods-LostPostcards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EQ967M39G;
+				INFOPLIST_FILE = "$(SRCROOT)/LostPostcards/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallfactorystudios.LostPostcards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2649B9291F63C21B00E8B22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7B0BE0C6B82D28EEF5E3D2 /* Pods-LostPostcards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EQ967M39G;
+				INFOPLIST_FILE = "$(SRCROOT)/LostPostcards/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallfactorystudios.LostPostcards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2649B92B1F63C21B00E8B22B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EQ967M39G;
+				INFOPLIST_FILE = LostPostcardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallfactorystudios.LostPostcardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LostPostcards.app/LostPostcards";
+			};
+			name = Debug;
+		};
+		2649B92C1F63C21B00E8B22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EQ967M39G;
+				INFOPLIST_FILE = LostPostcardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallfactorystudios.LostPostcardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LostPostcards.app/LostPostcards";
+			};
+			name = Release;
+		};
+		2649B92E1F63C21B00E8B22B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EQ967M39G;
+				INFOPLIST_FILE = LostPostcardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallfactorystudios.LostPostcardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LostPostcards;
+			};
+			name = Debug;
+		};
+		2649B92F1F63C21B00E8B22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EQ967M39G;
+				INFOPLIST_FILE = LostPostcardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smallfactorystudios.LostPostcardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LostPostcards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2649B8F71F63C21B00E8B22B /* Build configuration list for PBXProject "LostPostcards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2649B9251F63C21B00E8B22B /* Debug */,
+				2649B9261F63C21B00E8B22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2649B9271F63C21B00E8B22B /* Build configuration list for PBXNativeTarget "LostPostcards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2649B9281F63C21B00E8B22B /* Debug */,
+				2649B9291F63C21B00E8B22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2649B92A1F63C21B00E8B22B /* Build configuration list for PBXNativeTarget "LostPostcardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2649B92B1F63C21B00E8B22B /* Debug */,
+				2649B92C1F63C21B00E8B22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2649B92D1F63C21B00E8B22B /* Build configuration list for PBXNativeTarget "LostPostcardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2649B92E1F63C21B00E8B22B /* Debug */,
+				2649B92F1F63C21B00E8B22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2649B9061F63C21B00E8B22B /* LostPostcards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2649B9071F63C21B00E8B22B /* LostPostcards.xcdatamodel */,
+			);
+			currentVersion = 2649B9071F63C21B00E8B22B /* LostPostcards.xcdatamodel */;
+			path = LostPostcards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2649B8F41F63C21B00E8B22B /* Project object */;
+}
