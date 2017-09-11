@@ -8,19 +8,17 @@
 
 import UIKit
 import SnapKit
+import Firebase
 
 class HomeController: UICollectionViewController {
     
     let postCardCellId = "postCardCellId"
-    let postCards = [Postcard]()
-    
-    private let bg: UIView = {
-        let view = UIView()
-        return view
-    }()
+    var postcards = [Postcard]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleUpdateFeed), name: SharePhotoController.updateFeedNotificationName, object: nil)
         
         collectionView?.backgroundColor = .white
         collectionView?.register(PostcardCell.self, forCellWithReuseIdentifier: postCardCellId)
@@ -32,16 +30,16 @@ class HomeController: UICollectionViewController {
         
         setupNavigationItems()
         
-        fetchAllPosts()
+        fetchAllPostcards()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return postCards.count
+        return postcards.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: postCardCellId, for: indexPath) as! PostcardCell
-        cell.postcard = postCards[indexPath.item]
+        cell.postcard = postcards[indexPath.item]
         
         return cell
     }
@@ -56,14 +54,14 @@ class HomeController: UICollectionViewController {
     }
     
     @objc func handleRefresh() {
-        postCards.removeAll()
+        postcards.removeAll()
         fetchAllPostcards()
     }
     
-    private func fetchAllPostcards() {
-        fetchPostcards()
-//        fetchFollowingUserIds()
-    }
+//    private func fetchAllPostcards() {
+//        fetchPostcards()
+////        fetchFollowingUserIds()
+//    }
     
 //    private func fetchFollowingUserIds() {
 //        guard let uid = Auth.auth().currentUser?.uid else { return }
@@ -83,7 +81,7 @@ class HomeController: UICollectionViewController {
 //        }
 //    }
     
-    private func fetchPostcards() {
+    private func fetchAllPostcards() {
         let ref = Database.database().reference().child("postcards")
         
         ref.observeSingleEvent(of: .value) { snapshot in
@@ -94,49 +92,16 @@ class HomeController: UICollectionViewController {
             dictionaries.forEach({ (key, value) in
                 guard let dictionary = value as? [String: Any] else { return }
                 
-                let postcard     = Post(user: user, dictionary: dictionary)
-                self.posts.append(post)
+                let postcard = Postcard(dictionary: dictionary)
+                self.postcards.append(postcard)
             })
             
-            self.posts.sort(by: { (p1, p2) -> Bool in
-                return p1.creationDate.compare(p2.creationDate) == .orderedDescending
-            })
-            self.collectionView?.reloadData()
-            
-        
-    }
-//
-//    private func fetchPostcards() {
-//        guard let uid = Auth.auth().currentUser?.uid else { return }
-//
-//        Database.fetchUserWithUID(uid: uid) { user in
-//            self.fetchPostsWithUser(user: user)
-//        }
-//    }
-    
-    private func fetchPostsWithUser(user: User) {
-        
-        let ref = Database.database().reference().child("posts").child(user.uid)
-        
-        ref.observeSingleEvent(of: .value) { snapshot in
-            self.collectionView?.refreshControl?.endRefreshing()
-            
-            guard let dictionaries = snapshot.value as? [String: Any] else { return }
-            
-            dictionaries.forEach({ (key, value) in
-                guard let dictionary = value as? [String: Any] else { return }
-                
-                let post = Post(user: user, dictionary: dictionary)
-                self.posts.append(post)
-            })
-            
-            self.posts.sort(by: { (p1, p2) -> Bool in
-                return p1.creationDate.compare(p2.creationDate) == .orderedDescending
+            self.postcards.sort(by: { (p1, p2) -> Bool in
+                return p1.sentDate.compare(p2.sentDate) == .orderedDescending
             })
             self.collectionView?.reloadData()
         }
     }
-    
 }
 
 extension HomeController: UICollectionViewDelegateFlowLayout {

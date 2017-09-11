@@ -28,6 +28,7 @@
 		2649B9641F63C9AB00E8B22B /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9621F63C9AB00E8B22B /* FavoriteController.swift */; };
 		2649B9661F63C9C700E8B22B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9651F63C9C700E8B22B /* SearchController.swift */; };
 		2649B9671F63C9C700E8B22B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649B9651F63C9C700E8B22B /* SearchController.swift */; };
+		26943B931F659B61004DA5FF /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26943B921F659B61004DA5FF /* ShareController.swift */; };
 		26CAA7841F64FAF5000CB898 /* Postcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAA7831F64FAF5000CB898 /* Postcard.swift */; };
 		26CAA7871F64FD78000CB898 /* PostcardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAA7861F64FD78000CB898 /* PostcardCell.swift */; };
 		26CAA7891F64FEA2000CB898 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAA7881F64FEA2000CB898 /* CustomImageView.swift */; };
@@ -74,6 +75,7 @@
 		2649B95F1F63C95700E8B22B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		2649B9621F63C9AB00E8B22B /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
 		2649B9651F63C9C700E8B22B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		26943B921F659B61004DA5FF /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
 		26CAA7831F64FAF5000CB898 /* Postcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postcard.swift; sourceTree = "<group>"; };
 		26CAA7861F64FD78000CB898 /* PostcardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardCell.swift; sourceTree = "<group>"; };
 		26CAA7881F64FEA2000CB898 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				2649B9521F63C89A00E8B22B /* Favorite */,
 				2649B94F1F63C89100E8B22B /* Profile */,
 				262CC1961F64295C007E4BE6 /* LogIn */,
+				26943B921F659B61004DA5FF /* ShareController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				2649B9001F63C21B00E8B22B /* AppDelegate.swift in Sources */,
 				2649B95D1F63C94400E8B22B /* MainTabBar.swift in Sources */,
 				2649B9391F63C24100E8B22B /* SFSStyles.swift in Sources */,
+				26943B931F659B61004DA5FF /* ShareController.swift in Sources */,
 				26CAA7891F64FEA2000CB898 /* CustomImageView.swift in Sources */,
 				2649B9661F63C9C700E8B22B /* SearchController.swift in Sources */,
 				262CC19F1F64387A007E4BE6 /* SignupController.swift in Sources */,

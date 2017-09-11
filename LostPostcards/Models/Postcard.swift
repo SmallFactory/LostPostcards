@@ -11,12 +11,12 @@ import Foundation
 struct Postcard {
     let title: String
     let imageUrl: String
-    let date: String
+    let sentDate: Date
     
     init(dictionary: [String: Any]) {
         self.title = dictionary["title"] as? String ?? ""
         self.imageUrl = dictionary["imageUrl"] as? String ?? ""
-        self.date = dictionary["date"] as? String ?? ""
+        let secondsFrom1970 = dictionary["creationDate"] as? Double ?? 0
+        self.sentDate = Date(timeIntervalSince1970: secondsFrom1970)
     }
-    
 }
